@@ -7,7 +7,9 @@
     "start": "node .",
     "dev": "nodemon .",
     "worker": "node workers/emailWorker.js",
-    "redis": "docker run --name redis -p 6379:6379 -d redis"
+    "redis": "docker run --name redis -p 6379:6379 -d redis",
+    "redis:start":"docker start redis",
+    "redis:status":"docker ps -a | grep redis"
   },
   "keywords": [],
   "author": "",
